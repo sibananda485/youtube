@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #efefef;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  background-color: #efefef;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  /* border: solid 1px black; */
+}
+
+.left-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.middle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  /* border: solid 1px black;  */
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 568px;
+  height: 40px;
+  border: solid 1px black;
+  /* background-color: #ffffff; */
+  background-color: transparent;
+
+  padding-left: 10px;
+  border-radius: 60px;
+  margin-right: 10px;
+}
+input {
+  width: 515px;
+  height: 26px;
+  font-size: large;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.search-box {
+  width: 64px;
+  height: 40px;
+  border: solid 1px black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+
+  /* border-right: none;
+    border-top: none;
+    border-bottom: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: gainsboro; */
+}
+
+.micro-phone {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.icon1 {
+  width: 40px;
+  height: 40px;
+  /* border: solid 1px black;s */
+}
+
+/* img{
+    width: 40px;
+    height: 40px;
+    border: solid 2px black;
+} */
+
+/* ***************************  MAIN-BODY-CONTENT  **************************** */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 13px;
+}
+
+.main-body {
+  display: flex;
+  /* margin-top: 56px; */
+  padding-top: 54px;
+  /* border: solid 2px black; */
+}
+
+.left-side {
+  justify-content: center;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+  cursor: pointer;
+}
+
+.left-side::-webkit-scrollbar {
+  width: 10px;
+}
+
+.left-side::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 13px;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+.first-li {
+  display: flex;
+  /* font-weight: 500; */
+  /* font-size: 1rem; */
+  /* gap: 20px; */
+}
+
+.icon-box {
+  display: flex;
+  margin-left: 20px;
+}
+
+hr {
+  margin: 10px;
+}
+
+.Explore {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.right-side {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 10px black; */
+  border-right: none;
+  border-top: none;
+  /* background-color: lightblue; */
+  margin-left: 15%;
+}
+
+/* if i will use video tag that time i have to change this iframe into video tag */
+
+video {
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-bottom: 20%;
+  border: none;
+}
+
+/* video{
+    border-radius: 20px;
+    margin-top: 2rem;
+} */
+
+/* ***************************** */
+
+.reels-icon-box {
+  padding-top: 200px;
+  width: 64px;
+  height: 500px;
+  /* height: 580px; */
+  margin-top: 2rem;
+  padding-left: 4%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  /* border: solid 1px black; */
+}
+
+.icon {
+  /* border: solid 1px black; */
+  border-radius: 50%;
+  width: 48px;
+  height: 72px;
+  margin-top: 10px;
+  /* margin-top: 1rem; */
+}
+.circule {
+  width: 40px;
+  /* height: 40px; */
+  border-radius: 50%;
+  padding: 7px;
+  /* border: solid 1px black; */
+}
+
+.circule:hover {
+  background-color: #8f8484;
+  /* width:45px; */
+  border-radius: 50%;
+}
+
+h5 {
+  width: 48px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.first-video,
+.secound-video,
+.third-video,
+.forth-video,
+.fifth-video,
+.sixth-video {
+  display: flex;
+}
+
+/* ************************** HOVER EFFECT******************************** */
+
+.first-li:hover {
+  background-color: rgb(213, 203, 203);
+  border-radius: 10px;
+  /* margin-left: 10px;
+    margin-right: 10px; */
+  /* justify-content: center; */
+}
