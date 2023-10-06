@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding:0;
-    box-sizing: border-box;
+    border: border-box;
     font-family: 'poppins', sans-serif;
 }
 a{
@@ -11,107 +11,79 @@ a{
 img{
     cursor: pointer;
 }
-body{
-    background-color: #f9f9f9;
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    top:0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.navbarup{
     height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:30px;
+    margin-right: 60px;
 }
-
-#manubtn{
-    width: 50px;
-   height: 50px;
-    position: fixed;
-    left: 35px;
-    top: 20px;
-    cursor: pointer;
-}
-#manubtn img{
-    width: 32px;
-    margin-top: 15px;
-}
-#logo{
-    width: 100px;
-   height: 100px;
-    position: fixed;
-    left: 70px;
-    top: 0px;
-    cursor: pointer;
-}
-
-.main{
+.start{
     display: flex;
     align-items: center;
 }
-.navbara{
-    width: 25px;
-    height: 30px;
-    position: fixed;
-    right: 180px;
-    top: 30px;
+.last{
+    display: flex;  
+    gap:2em;
 }
-.navbarb{
-    width: 25px;
-    height: 30px;
-    position: fixed;
-    right: 120px;
-    top: 30px;
+.dash{
+    width: 35px;
+    height: 40px; 
 }
-.navbarc{
-    width: 25px;
-    height: 30px;
-    position: fixed;
-    right: 50px;
-    top: 30px;
-    border-radius: 50%;
+.logo1{
+    width: 110px;
+    height: 120px;   
 }
-input{
-    position: fixed;
-    font-size: 18px;
-    left: 350px;
-    top: 25px;
-    border: 3px solid #ccc;
-    margin-right: 15px;
-    padding: 8px 12px;
-    border-radius: 25px;
-    width: 600px;
-    height: 37px;
- }
-.search1{
+
+.nav-search{
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    width: 650px;
+    height: 40px;
+  
 }
-.middle{
-    position: fixed;
-    right: 570px;
-    top: 28px;
-    width: 32px;
-    height: 34px;
-    border: 3px solid rgb(218, 215, 215);
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: 3px solid lightgray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 20px;
+  
+}
+.search-icon{
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(238, 234, 234);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   color: #0f1111;
+}
+.mike{
+    width: 20px;
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 8px;
 
-
- }
-
-
-.micke{
+}
+.goat{
+    width: 30px;
+    height: 30px;
+}
+.notification{
     width: 20px;
     height: 30px;
-    position: fixed;
-    right: 530px;
-    top: 30px;
-    border: 2px solid lightgray;
-    background-color: gray;
-    border-radius: 50px;
+    /* padding-left: 10px; */
+}
+.cona{
+    width: 30px;
+    height: 30px;
+    /* padding-left: 10px; */
 }
 
 
@@ -123,13 +95,10 @@ input{
 
 .sidenav {
     width: 220px;
-    height: 100%;
     position: fixed;
-    top: 0px;
-    left: 30px;
+    top: 80px;
+    left: 20px;
     overflow-x: hidden;
-    padding-top: 100px;
-
 }
 
 .sidenav ul {
@@ -140,6 +109,10 @@ input{
 .sidenav li {
     margin-bottom: 10px;
     
+}
+.sidenav h1{
+    font-size: 20px;
+
 }
 
 .sidenav a {
@@ -184,59 +157,6 @@ input{
     background-color: transparent;
 }
 
-/*-------------filter section----------------------*/
-
-
-
-
-.filter-section {
-    background-color: white;
-    border-bottom: 1px solid #e1e1e1;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 160px;
-    margin-left: 280px;
-}
-/* Styles for the filter options */
-.filter-options {
-    display: flex;
-    position: relative;
-    gap: 90px;
-}
-
-.filter-option {
-    border: 1px solid black;
-    background-color: lightslategray;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    border-radius: 30px;
-    width:65px;
-    text-align: center;
-    margin-left: 10px;
-   
-}
-#one {
-    border: 1px solid black;
-    background-color: black;
-    color :#fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    border-radius: 20px;
-    width: 50px;
-    height: 20px;
-   text-align: center;
-   text-transform: capitalize;
-
-   
-   
-}
-.filter-option:hover {
-    color: black;
-}
 
 /*--------*/
 
@@ -281,6 +201,29 @@ input{
     padding-top: 20px;
    
 }
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.two3{
+    display: flex;
+    flex-direction: row;
+    font-size:15px;
+    color: gray;
+    padding-left: 20px;
+}
+.two1{
+    display: flex;
+    font-size:15px;
+    color: gray;
+    padding-left: 20px; 
+    padding-top: 5px;
+}
+.icon8{
+    display: flex;
+    gap:1em;
+    font-size: 20px;
+}
 .button{
     padding-top: 20px;
     display: flex;
@@ -319,20 +262,21 @@ input{
     position: fixed;
     border: 1px solid black;
     width: 28%;
-    border-radius: 50px;
+    border-radius: 40px;
     height: 580px;
-    margin-top: 700px;
-    background-color: rgb(31, 31, 83);
+    margin-top: 30px;
+    background-color: rgb(19, 19, 55);
+    display: flex;
+    flex-direction: row;
 }
 
 
 .video-list {
     display: flex;
     flex-direction: column;
-    padding: 40px;
     position: fixed;
-    margin-top: 750px;
-    margin-left: 700px;
+    margin-left: 480px;
+  
 }
 
 .video {
@@ -343,15 +287,26 @@ input{
     text-align: center;
     background-color: #fff;
 }
+.icon4{
+    display: flex;
+}
+.menudown{
+    padding-right: 15px;
+    padding-top: 30px;
+}
 
 .video h2{
     font-size:15px ;
 }
 
 .video img {
-    max-width: 18%;
-    height: auto;
+    max-width: 20%;
+  
 
+}
+.ten{
+    display: flex;
+    flex-direction: column;
 }
 
 
