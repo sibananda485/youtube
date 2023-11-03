@@ -15,6 +15,18 @@
       href="../svg+xml;base64,YTlogo.svg"
       type="image/x-icon"
     />
+    <style>
+      .profile{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: red;
+}
+    </style>
     <title>YouTube</title>
   </head>
   <body>
@@ -23,7 +35,7 @@
     <nav>
       <div class="nav-left">
         <img id="toggle" src="assets/humburger.svg" alt="" />
-        <a href="#"><img width="90px" src="assets/youtube.svg" alt="" /></a>
+        <a href="/index.html"><img width="90px" src="assets/youtube.svg" alt="" /></a>
       </div>
       <div class="nav-mid">
         <div class="searchbar">
@@ -35,7 +47,8 @@
       <div class="nav-right">
         <img src="assets/camera.svg" alt="" />
         <img src="assets/bell.svg" alt="" />
-        <div class="profile"></div>
+        <!-- <div class="profile"></div> -->
+        <div class="profile">S</div>
       </div>
     </nav>
 
@@ -43,7 +56,7 @@
       <!-- left Menu -->
       <div class="left-menu">
         <ul>
-          <li class="active"><img src="assets/home.svg" alt="" />Home</li>
+         <a href="../index.html"> <li class="active"><img src="assets/home.svg" alt="" />Home</li></a>
           <a href="../shorts/index.html"
             ><li><img src="assets/shorts.svg" alt="" />Shorts</li></a
           >
@@ -58,6 +71,9 @@
           <li><img src="assets/yourvideo.svg" alt="" />Your videos</li>
           <a href="../watchlater/clone.html"
             ><li><img src="assets/watchlater.svg" alt="" />Watch later</li></a
+          >
+          <a href="#"
+            ><li><img src="../assets/like.svg" alt="" />Liked later</li></a
           >
           <li><img src="assets/showmore.svg" alt="" />Show more</li>
           <hr />
